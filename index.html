@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" type="html/css" />
-    <title>Scout's Cafe Survey Form</title>
+    <title>Cafe Survey</title>
   </head>
   <body>
-    <h1>Scout's Cafe Survey Form</h1>
+    <h1>Cafe Survey</h1>
     <p>Thank you for taking the time to help us improve our service!</p>
     <form>
       <fieldset>
-        <label for="first-name"
-          >First Name <input id="first-name" type="text"
-        /></label>
+        <label for="first-name">First Name <input type="text" id="first-name" name="first-name" required /></label>
+        <label for="last-name">Last Name <input type="text" id="last-name" name="last-name" required /></label>
+        <label for="email">Email <input type="email" id="email" name="email" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer"
+          >How did you hear about us?
+          <select name="referrer" id="referrer">
+            <option value="">Select an option</option>
+            <option value="Friends">Friends</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Twitter">Twitter</option>
+          </select>
+        </label>
       </fieldset>
       <fieldset></fieldset>
-      <fieldset></fieldset>
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
