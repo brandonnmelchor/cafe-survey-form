@@ -1,3 +1,115 @@
+@media (max-width: 450px) {
+  body {
+    zoom: 70%;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    zoom: 50%;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    zoom: 40%;
+  }
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/1024359/pexels-photo-1024359.jpeg);
+  background-size: cover;
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+.survey {
+  background-color: white;
+  width: 75%;
+  min-width: 350px;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 2%;
+}
+
+form {
+  width: 90%;
+  margin: 5% auto;
+}
+
 h1 {
-  font-family: monospace;
+  font-size: 40px;
+}
+
+#title,
+#description,
+footer {
+  text-align: center;
+}
+
+fieldset {
+  border: 0;
+  padding: 0.5em 2em;
+}
+
+fieldset:is(:first-of-type) {
+  border-top: 3px solid #ffc9c9;
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #ffc9c9;
+}
+
+fieldset:not(:first-of-type) label {
+  font-size: 0.9em;
+}
+
+fieldset:not(:first-of-type) input {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  font-size: 0.9em;
+}
+
+p:not(:first-of-type),
+label {
+  display: block;
+  margin: 1em 0;
+}
+
+input,
+select,
+textarea {
+  font-family: Montserrat;
+  width: 100%;
+  min-height: 2.5em;
+  margin: 10px 0 0 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  margin: 0px 1em auto auto;
+}
+
+#submit {
+  display: block;
+  width: 60%;
+  margin: 2.5% auto;
+  font-size: 1em;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#coffee-img {
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: 5% auto;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: black;
 }
