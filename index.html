@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" type="html/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap" rel="stylesheet" />
     <title>Cafe Survey</title>
   </head>
   <body>
-    <h1>Cafe Survey</h1>
-    <p>Thank you for taking the time to help us improve our service!</p>
-    <form>
+    <h1 id="title">Cafe Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve our service!</p>
+    <form id="survey-form">
       <fieldset>
-        <label for="first-name">First Name <input type="text" id="first-name" name="first-name" required /></label>
-        <label for="last-name">Last Name <input type="text" id="last-name" name="last-name" required /></label>
-        <label for="email">Email <input type="email" id="email" name="email" required /></label>
+        <label id="name-label" for="name">Name <input type="text" id="name" name="name" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email <input type="email" id="email" name="email" placeholder="Enter your email" required /></label>
+        <label id="number-label" for="number">Age (Optional) <input type="number" id="number" name="age" placeholder="Age" min="0" max="120" /></label>
       </fieldset>
       <fieldset>
         <label for="referrer"
           >How did you hear about us?
-          <select name="referrer" id="referrer">
+          <select name="referrer" id="dropdown">
             <option value="">Select an option</option>
             <option value="Friends">Friends</option>
             <option value="Facebook">Facebook</option>
@@ -27,9 +28,45 @@
             <option value="Twitter">Twitter</option>
           </select>
         </label>
+
+        <p>Would you recommend Scout's Cafe to a friend?</p>
+        <label for="definitely"><input type="radio" id="definitely" name="recommend" value="definitely" /> Definitely</label>
+        <label for="maybe"><input type="radio" id="maybe" name="recommend" value="maybe" /> Maybe</label>
+        <label for="not-sure"><input type="radio" id="not-sure" name="recommend" value="not-sure" /> Not sure</label>
       </fieldset>
-      <fieldset></fieldset>
-      <input type="submit" value="Submit" />
+      <fieldset>
+        <p>What do you like the most from our coffee menu?</p>
+        <label for="french-vanilla"><input type="checkbox" id="french-vanilla" name="liked-coffee" value="french-vanilla" /> French Vanilla</label>
+        <label for="caramel-macchiato"><input type="checkbox" id="caramel-macchiato" name="liked-coffee" value="caramel-macchiato" /> Caramel Macchiato</label>
+        <label for="pumpkin-spice"><input type="checkbox" id="pumpkin-spice" name="liked-coffee" value="pumpkin-spice" /> Pumpkin Spice</label>
+        <label for="hazelnut"><input type="checkbox" id="hazelnut" name="liked-coffee" value="hazelnut" /> Hazelnut</label>
+        <label for="mocha"><input type="checkbox" id="mocha" name="liked-coffee" value="mocha" /> Mocha</label>
+
+        <p>What do you like the most from our dessert menu?</p>
+        <label for="donuts"><input type="checkbox" id="donuts" name="liked-dessert" value="donuts" /> Donuts</label>
+        <label for="cherry-pie"><input type="checkbox" id="cherry-pie" name="liked-dessert" value="cherry-pie" /> Cherry Pie</label>
+        <label for="cheesecakes"><input type="checkbox" id="cheesecakes" name="liked-dessert" value="cheesecakes" /> Cheesecakes</label>
+        <label for="cinnamon-rolls"><input type="checkbox" id="cinnamon-rolls" name="liked-dessert" value="cinnamon-rolls" /> Cinnamon Rolls</label>
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see improved?</p>
+        <label for="coffee"><input type="checkbox" id="coffee" name="improvements" value="coffee" /> Coffee</label>
+        <label for="desserts"><input type="checkbox" id="desserts" name="improvements" value="desserts" /> Desserts</label>
+        <label for="music"><input type="checkbox" id="music" name="improvements" value="music" /> Music</label>
+        <label for="decor"><input type="checkbox" id="decor" name="improvements" value="decor" /> Decor</label>
+        <label for="events"><input type="checkbox" id="events" name="improvements" value="events" /> Events</label>
+        <label for="customer-service"><input type="checkbox" id="customer-service" name="improvements" value="customer-service" /> Customer Service</label>
+
+        <p>Any comments or suggestions?</p>
+        <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."> </textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
     </form>
   </body>
+  <footer>
+    <p>
+      <a href="#" target="_blank">Scout's Cafe</a>
+    </p>
+    <p class="address">McAllen, Texas</p>
+  </footer>
 </html>
