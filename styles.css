@@ -65,9 +65,8 @@ fieldset:not(:first-of-type) label {
 
 fieldset:not(:first-of-type) input {
   width: unset;
-  margin: 0 0.5em 0 0;
+  margin: 0 0.4em 0 0;
   vertical-align: middle;
-  font-size: 0.9em;
 }
 
 p:not(:first-of-type),
