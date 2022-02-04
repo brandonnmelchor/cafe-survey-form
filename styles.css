@@ -33,7 +33,6 @@ body {
 }
 
 form {
-  width: 90%;
   margin: 5% auto;
 }
 
@@ -49,7 +48,7 @@ footer {
 
 fieldset {
   border: 0;
-  padding: 0.5em 2em;
+  padding: 0.5em 2em 0.75em 2em;
 }
 
 fieldset:is(:first-of-type) {
@@ -88,7 +87,7 @@ textarea {
 }
 
 textarea {
-  margin: 0px 1em auto auto;
+  margin: 0px auto 1em auto;
 }
 
 #submit {
