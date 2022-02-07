@@ -1,18 +1,22 @@
-@media (max-width: 450px) {
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
   body {
-    zoom: 70%;
+    zoom: 90%;
   }
 }
 
 @media (max-width: 350px) {
   body {
-    zoom: 50%;
+    zoom: 80%;
   }
 }
 
 @media (max-width: 300px) {
   body {
-    zoom: 40%;
+    zoom: 75%;
   }
 }
 
