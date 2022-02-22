@@ -129,3 +129,9 @@ a:hover,
 a:active {
   color: black;
 }
+
+@media (max-width: 650px) {
+  html {
+    zoom: 70%;
+  }
+}
