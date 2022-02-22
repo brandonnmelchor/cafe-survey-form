@@ -108,6 +108,10 @@ textarea {
   border-radius: 5px;
 }
 
+#submit:hover {
+  cursor: pointer;
+}
+
 #coffee-img {
   display: block;
   margin: 20px auto;
