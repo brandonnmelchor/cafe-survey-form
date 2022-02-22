@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 0.5px solid gray; */
 }
 
 body {
@@ -16,7 +15,7 @@ body {
   min-height: 100vh;
   padding: 50px 0px;
   background-image: url(https://github.com/brandonnmelchor/FCC-Cafe-Menu/blob/main/background.png?raw=true);
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   letter-spacing: 1px;
 }
@@ -57,7 +56,8 @@ fieldset:is(:first-of-type) {
   border-top: 3px solid #ffc9c9;
 }
 
-fieldset:is(:first-of-type) label {
+fieldset:is(:first-of-type) label,
+p {
   margin-bottom: 20px;
 }
 
@@ -85,14 +85,10 @@ label {
   display: block;
 }
 
-p {
-  margin-bottom: 20px;
-}
-
 input,
 select,
 textarea {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   width: 100%;
   height: 35px;
 }
