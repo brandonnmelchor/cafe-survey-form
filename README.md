@@ -1,6 +1,6 @@
 # Cafe-Survey
 
-I built a Cafe Survey Form using vanilla HTML and CSS.
+I created a simple Cafe Survey Form web page using vanilla HTML and CSS.
 
 https://brandonnmelchor.github.io/Cafe-Survey-Form/
 
