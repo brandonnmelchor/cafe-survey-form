@@ -1,9 +1,7 @@
 # Cafe-Survey
 
-I built a Cafe Survey form using vanilla HTML and CSS. I built this for one of freeCodeCamp's Responsive Web Design Certification challenges. Feel free to check it out. Any feedback would be appreciated!
+I built a Cafe Survey Form using vanilla HTML and CSS.
 
-https://codepen.io/brandonnmelchor/full/gOXwrLJ
-
-https://brandonnmelchor.github.io/FCC-Cafe-Survey/
+https://brandonnmelchor.github.io/Cafe-Survey-Form/
 
 ![](https://github.com/brandonnmelchor/FCC-Cafe-Survey/blob/main/screenshot%202.png?raw=true)
