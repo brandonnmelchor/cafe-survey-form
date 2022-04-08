@@ -4,69 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="styles.css" />
-    <title>Cafe Survey</title>
+    <link rel="shortcut icon" href="./icon.svg" />
+
+    <script src="https://kit.fontawesome.com/635f50260c.js" crossorigin="anonymous"></script>
+    <script src="javascript.js" defer></script>
+
+    <title>Wallflower Cafe | Survey Form</title>
   </head>
   <body>
     <div class="survey">
-      <h1 id="title">Cafe Survey</h1>
-      <p id="description">Thank you for taking the time to help us improve our service!</p>
-      <form id="survey-form">
+      <h1>Wallflower Cafe</h1>
+      <p class="description">Thank you for completing our survey!</p>
+
+      <form>
         <fieldset>
-          <label id="name-label" for="name">Name <input type="text" id="name" name="name" placeholder=" Enter your name" required /></label>
-          <label id="email-label" for="email">Email <input type="email" id="email" name="email" placeholder=" Enter your email" required /></label>
-          <label id="number-label" for="number">Age (Optional) <input type="number" id="number" name="age" placeholder=" Age" min="0" max="120" /></label>
+          <label for="name">Name <input type="text" id="name" name="name" placeholder=" Enter your name" required /></label>
+          <label for="email">Email <input type="email" id="email" name="email" placeholder=" Enter your email" required /></label>
+          <label for="number">Age (Optional) <input type="number" id="number" name="age" placeholder=" Age" min="0" max="120" /></label>
           <label for="referrer"
             >How did you hear about us?
-            <select name="referrer" id="dropdown">
+            <select name="referrer">
               <option value="">Select an option</option>
-              <option value="Friends">Friends</option>
-              <option value="Facebook">Facebook</option>
-              <option value="Instagram">Instagram</option>
-              <option value="Twitter">Twitter</option>
+              <option value="friends">Friends</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="twitter">Twitter</option>
+              <option value="other">Other</option>
             </select>
           </label>
         </fieldset>
+
         <fieldset>
           <p>Would you recommend Scout's Cafe to a friend?</p>
           <label for="definitely"><input type="radio" id="definitely" name="recommend" value="definitely" /> Definitely</label>
           <label for="maybe"><input type="radio" id="maybe" name="recommend" value="maybe" /> Maybe</label>
           <label for="not-sure"><input type="radio" id="not-sure" name="recommend" value="not-sure" /> Not sure</label>
         </fieldset>
-        <fieldset>
-          <p>What do you like the from our coffee menu?</p>
-          <label for="americano"><input type="checkbox" id="americano" name="liked-coffee" value="americano" /> Americano</label>
-          <label for="mocha"><input type="checkbox" id="mocha" name="liked-coffee" value="mocha" /> Mocha</label>
-          <label for="macchiato"><input type="checkbox" id="macchiato" name="liked-coffee" value="macchiato" /> Macchiato</label>
-          <label for="saffron-latte"><input type="checkbox" id="saffron-latte" name="liked-coffee" value="saffron-latte" /> Saffron Latte</label>
-          <label for="matcha-latte"><input type="checkbox" id="matcha-latte" name="liked-coffee" value="matcha-latte" /> Matcha Latte</label>
-        </fieldset>
-        <fieldset>
-          <p>What do you like the from our dessert menu?</p>
-          <label for="muffins"><input type="checkbox" id="muffins" name="liked-dessert" value="muffins" /> Muffins</label>
-          <label for="scones"><input type="checkbox" id="scones" name="liked-dessert" value="scones" /> Scones</label>
-          <label for="bagels"><input type="checkbox" id="bagels" name="liked-dessert" value="bagels" /> Bagels</label>
-          <label for="cheesecake"><input type="checkbox" id="cheesecake" name="liked-dessert" value="cheesecake" /> Cheesecake</label>
-        </fieldset>
+
         <fieldset>
           <p>What would you like to see improved?</p>
           <label for="coffee"><input type="checkbox" id="coffee" name="improvements" value="coffee" /> Coffee</label>
           <label for="desserts"><input type="checkbox" id="desserts" name="improvements" value="desserts" /> Desserts</label>
           <label for="music"><input type="checkbox" id="music" name="improvements" value="music" /> Music</label>
-          <label for="decor"><input type="checkbox" id="decor" name="improvements" value="decor" /> Decor</label>
-          <label for="events"><input type="checkbox" id="events" name="improvements" value="events" /> Events</label>
-          <label for="customer-service"><input type="checkbox" id="customer-service" name="improvements" value="customer-service" /> Customer Service</label>
+          <label for="customer-service"
+            ><input type="checkbox" id="customer-service" name="improvements" value="customer-service" /> Customer Service</label
+          >
         </fieldset>
+
         <fieldset>
           <p>Any comments or suggestions?</p>
           <textarea name="comments" id="comments" cols="30" rows="5" placeholder=" Enter your comment here..."></textarea>
         </fieldset>
+
         <input type="submit" id="submit" value="Submit" />
-        <img id="coffee-img" src="https://raw.githubusercontent.com/brandonnmelchor/Cafe-Menu/main/coffee.png" alt="coffee icon" />
       </form>
+
       <footer>
-        <p><a href="https://codepen.io/brandonnmelchor" target="_blank">Scout's Cafe</a></p>
-        <p class="brandonn">&copy; 2022 Brandonn Melchor</p>
+        <a href="https://github.com/brandonnmelchor" target="_blank">&copy; 2022 Brandonn Melchor <i class="fa-brands fa-github"></i></a>
       </footer>
     </div>
   </body>
